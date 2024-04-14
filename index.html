@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">   
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <meta name="description" content="Portifólio da desenvolvedora Karoliny Rufino para compartilhar projetos e habilidades">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="shortcut icon" href="assets/imagens/favicon.ico" type="image/x-icon">
@@ -13,13 +14,40 @@
 <body>
 
     <header class="header">
+        <nav class="header--nav">
+            <ul class="menu menu--principal">
+                <li class="menu-item">
+                    <a class="menu-link active" href="#home">
+                        <span class="menu-text">Home</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#projetos">
+                        <span class="menu-text">Projetos</span>
+                    </a>
+                </li>  
+                <li class="menu-item">
+                    <a class="menu-link" href="#sobre">
+                        <span class="menu-text">Sobre</span>
+                    </a>
+                </li>  
+                <li class="menu-item">
+                    <a class="menu-link" href="#contato">
+                        <span class="menu-text">Contato</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <div class="header-brand">
-            <h1 class="brand-logo">Rufino.</h1>
+            <span class="brand-logo">Rufino.</span>
         </div>
-        <i id="toggleTheme" class="bi bi-sun"></i>
+        <div class="header-toggle">
+            <i id="toggleTheme" class="bi bi-sun"></i>
+        </div>
     </header>
 
-    <nav>
+    <nav class="nav--mobile">
         <ul class="menu menu--mobile">
             <li class="menu-item">
                 <a class="menu-link active" href="#home">
@@ -27,21 +55,18 @@
                     <span class="menu-text">Home</span>
                 </a>
             </li>
-
             <li class="menu-item">
                 <a class="menu-link" href="#projetos">
                     <i class="menu-icon bi bi-window-stack"></i>
                     <span class="menu-text">Projetos</span>
                 </a>
             </li>
-
             <li class="menu-item">
                 <a class="menu-link" href="#sobre">
                     <i class="menu-icon bi bi-person"></i>
                     <span class="menu-text">Sobre</span>
                 </a>
             </li>
-
             <li class="menu-item">
                 <a class="menu-link" href="#contato">
                     <i class="menu-icon bi bi-envelope"></i>
@@ -51,5 +76,65 @@
         </ul>
     </nav>
 
+    <main>
+        <div class="main--content1">
+            <h1> <b>Soluções criativas & </b> Desenvolvimento Front-end </h1>
+            <p> Karoliny Rufino, Vitória-ES, Desenvolvedora Web. </p>
+
+            <ul class="menu menu--social">
+                <li>
+                    <a class="menu-link" href="https://github.com/KarolinyRufino" target="_blank">
+                        <i class="menu-icon bi bi-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-link" href="https://www.linkedin.com/in/this-is-karoliny/" target="_blank">
+                        <i class="menu-icon bi bi-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <button class="btn btn--primary">
+                <span>Ver projetos</span>
+                <i class="bi bi-arrow-down-right"></i>
+            </button>
+        </div>
+
+        <div class="main--content2">
+            <img src="assets/imagens/deploy.png" alt="deploy do projeto Aranhaverso">
+        </div>
+    </main>
+
+    <section class="skills">
+        <h2>Conhecimentos nas principais tecnologias do mercado</h2>
+        <ul class="skills-list">
+            <li class="skills-item">        
+                <i class="devicon-javascript-plain"></i>    
+            </li>
+            <li class="skills-item">        
+                <i class="devicon-nodejs-plain-wordmark"></i>    
+            </li>
+            <li class="skills-item">        
+                <i class="devicon-react-plain"></i>    
+            </li>
+            <li class="skills-item">        
+                <i class="devicon-bootstrap-plain"></i>    
+            </li>
+            <li class="skills-item">        
+                <i class="devicon-html5-plain"></i>    
+            </li>
+            <li class="skills-item">        
+                <i class="devicon-css3-plain"></i>    
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>
+            © 2024. Todos os Direitos reservados. Desevolvido por <a href="https://github.com/KarolinyRufino" target="_blank">Karoliny Rufino</a>
+        </p>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>

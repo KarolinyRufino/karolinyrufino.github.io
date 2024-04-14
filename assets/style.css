@@ -1,16 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+Tamil:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&family=Noto+Sans+Tamil:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root, :root[data-theme='dark'] {
     --primary-color: #f0f0f0;
 
     --primary-bg-color: #111217;
     --secondary-bg-color: #28292e;
-    --border-color: #28292e;
+    --primary-border-color: #28292e;
+    --secondary-border-color: #56575a;
 
-    --title-color: #9a9a9c;
+    --title-color: #f0f0f0;
     --link-color: #9a9a9c;
     --icon-color: #c7c8c9;
     --text-color: #9a9a9a;
+}
+
+:root[data-theme='light'] {
+    --primary-color: #0b0b0f;
+
+    --primary-bg-color: #e9e9e9;
+    --secondary-bg-color: #c7c8c9;
+    --primary-border-color: #c7c8c9;
+    --secondary-border-color: #c7c8c9;
+
+    --title-color: #0b0b0f;
+    --link-color: #28292e;
+    --icon-color: #56575a;
+    --text-color: #28292e;
 }
 
 * {
@@ -24,10 +41,21 @@
 body {
     background-color: var(--primary-bg-color);
     font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    width: 100vw;
+    height: 100vh;
 }
 
 h1{
-    color: #7F54C9;
+    font-size: 2.5rem;
+    color: var(--title-color);
+    
+}
+
+h1, h2, h3 {
+    font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
 }
 
 i {
@@ -36,6 +64,21 @@ i {
 
 a {
     text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+b {
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.25rem;
+    text-align: justify;
 }
 
 .header {
@@ -48,9 +91,20 @@ a {
     padding: .5rem 1rem;
 }
 
+.header-toggle {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .header-brand .brand-logo {
     width: 3.25rem;
     height: 3.25rem;
+}
+
+.brand-logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #7F54C9;
 }
 
 #toggleTheme {
@@ -73,7 +127,7 @@ a {
     position: fixed;
     bottom: 0;
     justify-content: space-between;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--primary-border-color);
 }
 
 .menu--mobile .menu-link {
@@ -86,7 +140,9 @@ a {
 }
 
 .menu-link.active .menu-icon,
-.menu-link.active .menu-text {
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text {
     color: var(--primary-color);
     font-weight: 600;
 }
@@ -104,8 +160,190 @@ a {
     text-transform: uppercase;
 }
 
+.header--nav {
+    display: none;
+}
+
+.menu--principal {
+    gap: 1rem;
+}
+
+.menu--social {
+    gap: 1rem;
+}
+
+.btn {
+    width: 100%;
+    background: transparent;
+    border-radius: 3.125rem;
+    padding: 0.875rem;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.btn span, .btn i{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.btn--primary span {
+    color: var(--primary-color);
+}
+
+.btn--primary {
+    border: 1px solid var(--primary-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 1rem;
+}
+
+.main--content1{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main--content2 img {
+    width: 100%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 6.25rem 1rem 2rem 1rem;
+    background: var(--secondary-bg-color);
+    margin-top: -5.5rem;
+    text-align: center;
+}
+
+.skills h2{
+    text-transform: none;
+}
+
+.skills-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: .8rem;
+    text-align: center;
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    aspect-ratio: 1/1;
+    border: 1px solid var(--secondary-border-color);
+    border-radius: 50%;
+}
+
+.skills-item i {
+    font-size: 2.4rem;
+}
+
+footer p{
+    font-size: .875rem;
+    text-align: center;
+    padding-top: 1.5rem ;
+    padding-bottom: 6rem;
+    margin-bottom: 5rem ;
+}
+
+
 @media (min-width: 768px) {
-    .menu--mobile {
+    body {
+        width: 100%;
+    }
+
+    .header {
+        position: fixed;
+        padding: 1rem 6rem;
+        background-color: var(--primary-bg-color);
+        border-bottom: 1px solid var(--primary-border-color);
+    }
+
+    .nav--mobile {
         display: none;
+    }
+
+    .header--nav {
+        display: flex;
+    }
+
+    .header--nav, .header-toggle {
+        min-width: 30%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .main--content1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0rem 6rem 9rem 1rem;
+    }
+
+    .skills {
+        padding: 6.25rem 6rem 2rem 6rem;
+        margin-top: -6rem;
+    }
+
+    footer p{
+        margin-bottom: 0;
+        padding: 1rem;
+    }
+  
+}
+
+@media (min-width: 1200px) {
+    main {
+        padding: 12rem 6rem 2rem;
+    }
+    .main--content1 .btn {
+        width: auto;
+    }
+    .main--content1 {
+        padding-top: 6rem;
+        padding-bottom: 10rem;
+    }
+
+    .skills {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10rem 4rem 6rem;
+    }
+
+    .skills h2 {
+        font-size: 3rem;
+        width: 60%;
+    }
+}
+
+@media (min-width: 1400px) {
+    h1 {
+        font-size: 6.25rem;
+    }
+    .header {
+        padding: 1rem 15rem;
+    }
+
+    .skills {
+        padding: 10rem 15rem 4rem;
     }
 }
