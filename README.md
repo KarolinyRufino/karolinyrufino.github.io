@@ -2,7 +2,7 @@ Bem-vindo ao meu portfólio! Este repositório contém o código-fonte do meu si
 
 ## Acesso ao Site
 
-Você pode acessar portifólio através do seguinte link: [Link para o seu site]
+Você pode acessar portifólio através do seguinte link: <a href="https://karolinyrufino.github.io/" target="_blank">Portifólio</a>
 
 ## Visão Geral
 
