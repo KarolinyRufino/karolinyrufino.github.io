@@ -18,6 +18,12 @@ Se você tiver interesse em colaborar em algum projeto, discutir oportunidades d
 
 - **Email:** <a href="mailto:karolinysantosofc@outlook.com" target="_blank">karolinysantosofc@outlook.com</a> 
 - **LinkedIn:** <a href="https://www.linkedin.com/in/this-is-karoliny/" target="_blank">Karoliny Rufino</a> 
-- **Website:** [Seu website pessoal]
+- **Website:** <a href="https://karolinyrufino.github.io/" target="_blank">Portifólio</a>
 
 Fique à vontade para explorar meu site e entre em contato se tiver alguma dúvida ou oportunidade interessante para discutir. Obrigado por visitar meu portfólio!
+
+---
+
+<p align="center">
+  Feito com 💜por Karoliny.
+</p>
