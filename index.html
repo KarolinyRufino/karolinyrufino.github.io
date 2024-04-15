@@ -22,17 +22,17 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a class="menu-link" href="#projetos">
+                    <a class="menu-link" href="#projects">
                         <span class="menu-text">Projetos</span>
                     </a>
                 </li>  
                 <li class="menu-item">
-                    <a class="menu-link" href="#sobre">
+                    <a class="menu-link" href="#about">
                         <span class="menu-text">Sobre</span>
                     </a>
                 </li>  
                 <li class="menu-item">
-                    <a class="menu-link" href="#contato">
+                    <a class="menu-link" href="#contact">
                         <span class="menu-text">Contato</span>
                     </a>
                 </li>
@@ -56,19 +56,19 @@
                 </a>
             </li>
             <li class="menu-item">
-                <a class="menu-link" href="#projetos">
+                <a class="menu-link" href="#projects">
                     <i class="menu-icon bi bi-window-stack"></i>
                     <span class="menu-text">Projetos</span>
                 </a>
             </li>
             <li class="menu-item">
-                <a class="menu-link" href="#sobre">
+                <a class="menu-link" href="#about">
                     <i class="menu-icon bi bi-person"></i>
                     <span class="menu-text">Sobre</span>
                 </a>
             </li>
             <li class="menu-item">
-                <a class="menu-link" href="#contato">
+                <a class="menu-link" href="#contact">
                     <i class="menu-icon bi bi-envelope"></i>
                     <span class="menu-text">Contato</span>
                 </a>
@@ -76,7 +76,7 @@
         </ul>
     </nav>
 
-    <main>
+    <main id="home">
         <div class="main--content1">
             <h1> <b>Soluções criativas & </b> Desenvolvimento Front-end </h1>
             <p> Karoliny Rufino, Vitória-ES, Desenvolvedora Web. </p>
@@ -94,10 +94,12 @@
                 </li>
             </ul>
 
-            <button class="btn btn--primary">
-                <span>Ver projetos</span>
-                <i class="bi bi-arrow-down-right"></i>
-            </button>
+            <a href="#projects">
+                <button class="btn btn--primary">
+                    <span>Ver projetos</span>
+                    <i class="bi bi-arrow-down-right"></i>
+                </button>
+            </a>
         </div>
 
         <div class="main--content2">
@@ -127,6 +129,258 @@
                 <i class="devicon-css3-plain"></i>    
             </li>
         </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projetos</h2>
+        <div class="projects-container">
+            <div class="projects-card">
+                <img class="card-cover" src="assets/projects/todoList.png" alt="capa de projeto">
+                <div class="card-body">
+                    <h3 class="card-title">Todo List - Lista de Tarefas</h3>
+                    <p class="card-description">
+                        Ele permite que você gerencie suas tarefas de forma fácil e eficiente, proporcionando uma experiência de produtividade sem complicações.
+                    </p>
+
+                    <ul class="functionalities-list">
+                        <li>Adicionar Tarefas</li>
+                        <li>Remover Tarefas</li>
+                        <li>Marcar como Concluído</li>
+                        <li>Alternância de Tema</li>
+                    </ul>
+    
+                    <ul class="skills-list">
+                        <li class="skills-item">        
+                            <i class="devicon-html5-plain"></i>    
+                        </li>
+                        <li class="skills-item">        
+                            <i class="devicon-css3-plain"></i>    
+                        </li>
+                        <li class="skills-item">        
+                            <i class="devicon-javascript-plain"></i>    
+                        </li>
+                    </ul>
+    
+                    <div class="card--buttons">
+                        <button class="btn btn--primary">
+                            <a target="_blank" href="https://karolinyrufino.github.io/to-do-list/">
+                                <span>Prévia</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </button>
+                        <button class="btn">
+                            <a target="_blank" href="https://github.com/KarolinyRufino/to-do-list?tab=readme-ov-file">
+                                <span>Repositório</span>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-card card-reverse">
+                <img class="card-cover" src="assets/projects/Studio Ghibli.png" alt="capa de projeto">
+                <div class="card-body">
+                    <h3 class="card-title">Landing Page Studio Ghibli</h3>
+                    <p class="card-description">Landing Page simples de um estúdio de filmes de animação japonês.</p>
+    
+                    <ul class="skills-list">
+                        <li class="skills-item">        
+                            <i class="devicon-html5-plain"></i>    
+                        </li>
+                        <li class="skills-item">        
+                            <i class="devicon-css3-plain"></i>    
+                        </li>
+                        <li class="skills-item">        
+                            <i class="devicon-javascript-plain"></i>    
+                        </li>
+                    </ul>
+    
+                    <div class="card--buttons">
+                        <button class="btn btn--primary">
+                            <a target="_blank" href="https://karolinyrufino.github.io/studio-ghibli/">
+                                <span>Prévia</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </button>
+                        <button class="btn">
+                            <a target="_blank" href="https://github.com/KarolinyRufino/studio-ghibli">
+                                <span>Repositório</span>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>           
+            
+            <div class="projects-card">
+                <img class="card-cover" src="assets/projects/BootstrapCafé - web.png" alt="capa de projeto">
+                <div class="card-body">
+                    <h3 class="card-title">Bootstrap Café</h3>
+                    <p class="card-description">Landing Page de uma cafeteria.</p>
+    
+                    <ul class="skills-list">
+                        <li class="skills-item">        
+                            <i class="devicon-bootstrap-plain"></i>    
+                        </li>
+                        <li class="skills-item">        
+                            <i class="devicon-html5-plain"></i>    
+                        </li>
+                        <li class="skills-item">        
+                            <i class="devicon-css3-plain"></i>    
+                        </li>
+                    </ul>
+    
+                    <div class="card--buttons">
+                        
+                        <button class="btn btn--primary">
+                            <a target="_blank" href="https://github.com/KarolinyRufino/bootstrap-cafe">
+                                <span>Repositório</span>
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <a class="content-btn" target="_blank" href="https://github.com/KarolinyRufino">
+                <button class="btn btn--primary">
+                    <span>Ver todos os projetos</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about--content1">
+            <img class="about-photo" src="assets/imagens/euzinha.jpg" alt="">
+            <div class="about-description">
+                <h2>Sobre Mim</h2>
+                <p>
+                    Karoliny Rufino. Estudo programação e sou apaixonada por tecnologia e desenho digital. Atualmente curso Análise e Desenvolvimento de Sistemas na Estácio. Paralelamente, estou estudando UX Designer na DIO e estou ampliando meus conhecimentos por meio de cursos de Desenvolvimento Web na Udemy, onde tenho explorado JavaScript, NodeJS, ReactJs e outras tecnologias.
+                </p>
+
+                <div class="description-buttons">
+                    <a target="_blank" href="https://www.linkedin.com/in/this-is-karoliny/">
+                        <button class="btn btn--primary">
+                            <span>Conect-se comigo</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </a>
+                    <a  href="">
+                        <button class="btn">
+                            <span>Currículo</span>
+                        </button>
+                    </a>
+                </div>
+        </div>
+    </section>
+
+    <section id="formation">
+        <div class="formation--university">
+            <h3>Formação</h3>
+            <div class="border-item">
+                <p class="course-name">
+                    Análise e Desenvolvimento de Sistemas
+                </p>
+    
+                <ul class="formation-list">
+                    <li>
+                        <i class="bi bi-bank"></i>
+                        <span>Estácio de Sá</span>
+                    </li>
+                    <li>
+                        <i class="bi bi-mortarboard-fill"></i>
+                        <span>Jan 2022 - em andamento</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+               
+        <div class="col2">
+            <h3>Cursos</h3>
+                <div id="accordion">
+
+                    <div class="accordion--item active">
+                        <button class="accordion--header start">
+                            <span>
+                                Formação GitHub Certification
+                            </span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion--body">
+                            <p>
+                                Digital Innovation One. Mar 2024. 10h
+                            </p>
+                            <ul class="functionalities-list">
+                                <li>
+                                    Controle de versão e colaboração
+                                </li>
+                                <li>
+                                    Administração no ecossistema Git e GitHub
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion--item">
+                        <button class="accordion--header">
+                            <span>
+                                Lógica de Programação
+                            </span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion--body">
+                            <p>
+                                Senai ES. Jun 2022. 14h
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion--item">
+                        <button class="accordion--header end">
+                            <span>
+                                Formação GitHub Certification
+                            </span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion--body">
+                            <p>
+                                Digital Innovation One. Mar 2024. 10h
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contate-me</h2>
+            <p> 
+                Estou disponível para serviços e novas conexões. Contate-me via e-mail e conecte-se comigo através das minhas redes sociais. 
+            </p>
+
+            <ul class="menu menu--social">
+                <li>
+                    <a class="menu-link" href="https://github.com/KarolinyRufino" target="_blank">
+                        <i class="menu-icon bi bi-github"></i>
+                    </a>
+                    <span>Github</span>
+                </li>
+                <li>
+                    <a class="menu-link" href="https://www.linkedin.com/in/this-is-karoliny/" target="_blank">
+                        <i class="menu-icon bi bi-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </li>
+            </ul>
+
+            <button class="btn btn--primary btn-contact">
+                <span>karolinysantosofc@outlook.com</span>
+            </button>
+        </div>
     </section>
 
     <footer>
